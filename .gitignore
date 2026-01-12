@@ -4,6 +4,18 @@ __pycache__/
 *$py.class
 data/
 .DS_Store
+
+# Build outputs
+Android/RiceDiseaseDetector/app/build/
+Android/RiceDiseaseDetector/build/
+Android/RiceDiseaseDetector/.gradle/
+
+# Local properties
+Android/RiceDiseaseDetector/local.properties
+Android/RiceDiseaseDetector/.idea/
+
+# Gradle wrapper (optional - but include for easier setup)
+# Android/RiceDiseaseDetector/gradle/wrapper/
 # C extensions
 *.so
 
