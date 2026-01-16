@@ -150,19 +150,3 @@ print("-"*60)
 print(f"{'FP32 Baseline':<25} {size_fp32:<15.2f} {'---':<15}")
 print(f"{'Dynamic Quantized':<25} {size_dynamic:<15.2f} {f'{(1-size_dynamic/size_fp32)*100:.1f}%':<15}")
 print(f"{'INT8 Quantized':<25} {size_int8:<15.2f} {f'{(1-size_int8/size_fp32)*100:.1f}%':<15}")
-
-print("\n" + "="*60)
-print("DEPLOYMENT RECOMMENDATIONS")
-print("="*60)
-if size_int8 < 1.0:
-    print("🏆 BONUS ACHIEVED! Model is under 1MB")
-    print(f"   Use: {os.path.basename(TFLITE_INT8_PATH)} for edge deployment")
-elif size_int8 < 5.0:
-    print(f"✅ Model meets <5MB requirement")
-    print(f"   Use: {os.path.basename(TFLITE_INT8_PATH)} for edge deployment")
-else:
-    print(f"⚠️  Model is {size_int8:.2f}MB (target: <5MB)")
-    print(f"   Consider pruning or using MobileNetV3-Nano")
-
-print("\n💡 Next step: Run evaluation script to check accuracy")
-print(f"💡 All models saved to: {OUTPUT_DIR}")

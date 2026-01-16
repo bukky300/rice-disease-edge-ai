@@ -7,16 +7,18 @@ import os
 import os
 import tensorflow as tf
 
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-PROJECT_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, ".."))
+
+PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
+if os.path.basename(PROJECT_ROOT) == "scripts":
+    PROJECT_ROOT = os.path.dirname(PROJECT_ROOT)
 
 
 MODEL_PATH = os.path.join(
     PROJECT_ROOT,
     "models",
     "baseline",
-    "mobilenetv2_rice_infer",
-    "baseline_best.keras",
+    "mobilenetv3small_infer",
+    "rice_model_baseline.keras",
 )
 
 IMG_SIZE = (160, 160)
