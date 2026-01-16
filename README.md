@@ -22,7 +22,7 @@ Rice Disease Detection - Edge AI Application
 - [Future Work](#future-work)
 - [Video Walkthrough](#video-walkthrough)
 
-## 🎯 Overview
+## Overview
 
 This project implements an on-device rice disease classification system that identifies 6 different rice leaf conditions without requiring internet connectivity. The solution is optimized for mobile deployment with a focus on model size, inference speed, and accuracy.
 
@@ -41,7 +41,7 @@ This project implements an on-device rice disease classification system that ide
 *   Sheath Blight
     
 
-## 🏆 Key Achievements
+## Key Achievements
 
 *   ✅ **Model Size:** 1.13 MB (Dynamic Quantized TFLite) - **Meets <5MB requirement**
     
@@ -745,6 +745,7 @@ rice-disease-edge-ai/
 ├── scripts/
 │   ├── convert_to_tflite.py
 │   ├── eval_tflite.py
+│   ├── perdict.py
 │   └── prepare_model_for_coreml.py
 ├── Android/
 │   └── RiceDiseaseDetector/
