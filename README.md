@@ -54,7 +54,7 @@ This project implements an on-device rice disease classification system that ide
 *   ✅ **Production-Ready:** Fully functional Android application
     
 
-## 📊 Dataset
+## Dataset
 
 
 **Source:** [Rice Disease Dataset](https://www.kaggle.com/datasets/anshulm257/rice-disease-dataset) from Kaggle
@@ -90,7 +90,7 @@ def augment_image(image, label):
 **Key Decision:** Augmentation applied in data pipeline, NOT in model architecture, ensuring TFLite compatibility.
 
 
-## 🏗️ Model Architecture Evolution
+## Model Architecture Evolution
 
 
 ### Initial Approach: MobileNetV2
@@ -151,7 +151,7 @@ Dense(6, Softmax)
 
 **Total Parameters:** ~1.5M (Trainable: ~80K)
 
-## 🎓 Training Process
+##  Training Process
 
 
 **Environment:**
@@ -201,7 +201,7 @@ Dense(6, Softmax)
 *   Stable convergence without overfitting
     
 
-## ⚡ Edge Optimization
+## Edge Optimization
 
 
 ### Optimization Pipeline
@@ -272,8 +272,8 @@ converter.target_spec.supported_ops = [tf.lite.OpsSet.TFLITE_BUILTINS_INT8]
 
 **Production Reality:** A stable 1.13 MB model beats an unstable 0.9 MB model.
 
-📉 Trade-off Analysis
----------------------
+## Trade-off Analysis
+
 
 ### Performance Comparison
 
@@ -326,8 +326,8 @@ converter.target_spec.supported_ops = [tf.lite.OpsSet.TFLITE_BUILTINS_INT8]
     *   Works offline (critical for rural deployment)
         
 
-📱 Mobile Application
----------------------
+## Mobile Application
+
 
 ### Android Implementation
 
@@ -423,8 +423,9 @@ inputBuffer.putFloat((b / 127.5f) - 1.0f)
 > 
 > This is **expected and normal** in production deployment.
 
-🎯 Results
-----------
+ 
+## Results
+
 
 ### Test Set Performance
 
@@ -466,8 +467,9 @@ Primary confusions occur between visually similar diseases:
 
 These confusions mirror human expert challenges, validating model behavior.
 
-🚧 Technical Challenges & Solutions
------------------------------------
+
+## Technical Challenges & Solutions
+
 
 ### Challenge 1: Preprocessing Mismatch Between Training and Inference
 
@@ -615,8 +617,8 @@ def augment_image(image, label):
 
 **Future Work:** Investigate TFLite for iOS or revisit CoreML with TensorFlow 2.18+ compatibility improvements.
 
-🚀 Installation & Usage
------------------------
+## Installation & Usage
+
 
 ### Prerequisites
 
@@ -713,8 +715,8 @@ cd Android/RiceDiseaseDetector
 *   Test with camera or gallery images
     
 
-📁 Project Structure
---------------------
+## Project Structure
+
 
 ```
 rice-disease-edge-ai/
@@ -763,57 +765,24 @@ rice-disease-edge-ai/
     └── model_comparison.png
 ```
 
-🔮 Future Work
---------------
+## Future Work
+
 
 ### Model Improvements
 
 *    Explore EfficientNet-Lite variants
     
-*    Implement model pruning for further compression
-    
-*    Quantization-aware training
-    
-*    Knowledge distillation from larger models
-    
 *    Test on EfficientNetV2-Nano
     
-
-### Feature Additions
-
-*    Disease severity estimation
-    
-*    Treatment recommendations database
-    
-*    Offline classification history
-    
-*    Multi-language support
-    
-*    GPS tagging for agricultural mapping
-    
-*    Batch image processing
     
 
 ### Platform Expansion
 
 *    iOS app with TensorFlow Lite (not CoreML)
     
-*    Web application with TensorFlow.js
-    
 *    Edge TPU optimization for embedded devices
     
 *    Raspberry Pi deployment guide
-    
-
-### Data & Training
-
-*    Expand to more rice varieties
-    
-*    Active learning pipeline
-    
-*    Federated learning for continuous improvement
-    
-*    Multi-crop disease detection
     
 
 🎥 Video Walkthrough
@@ -844,16 +813,3 @@ rice-disease-edge-ai/
 This project is submitted as part of the Edge AI Engineer Challenge.
     
 
-📧 Contact
-----------
-
-**Chukwuebuka Emmanuel Igbokweuche**
-
-For questions, collaboration, or job opportunities, please reach out via:
-
-*   GitHub: \[Your GitHub\]
-    
-*   Email: \[Your Email\]
-    
-*   LinkedIn: \[Your LinkedIn\]
-    
