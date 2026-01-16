@@ -12,12 +12,15 @@ Android/RiceDiseaseDetector/.gradle/
 
 # Local properties
 Android/RiceDiseaseDetector/local.properties
-Android/RiceDiseaseDetector/.idea/
-
 # Gradle wrapper (optional - but include for easier setup)
 # Android/RiceDiseaseDetector/gradle/wrapper/
 # C extensions
 *.so
+
+ios/**/DerivedData/
+ios/**/build/
+ios/**/*.xcuserstate
+ios/**/xcuserdata/
 
 # Distribution / packaging
 .Python
