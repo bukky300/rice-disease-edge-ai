@@ -788,7 +788,7 @@ rice-disease-edge-ai/
 🎥 Video Walkthrough
 --------------------
 
-**Watch the complete project explanation:** \[YouTube/Loom Link\]
+**Watch the complete project explanation:** \[Loom Link](https://www.loom.com/share/c7a95b4fe19949858b4b8c51834b7cc7)
 
 **Topics Covered:**
 
